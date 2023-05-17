@@ -1,4 +1,4 @@
-const API_URL = "https://randomuser.me/api/?results=15";
+const API_URL = "https://randomuser.me/api/?results=50";
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -37,14 +37,14 @@ async function changeInformation(users) {
       <img src=${user.picture.large} alt="" /> 
     </div>
     <div class="nombre">
-      <p>${user.name.first}</p>
-    </div>
+    <p>Nombre completo: ${user.name.first}, ${user.name.last}</p>
+  </div>
     <div id="estrellas">
      ${estrellas}
     </div>
     <div>
-      <p >${user.location.city}</p>
-      <p >${user.email}</p>
+      <p >Pais: ${user.nat}</p>
+      <p >Ciudad: ${user.location.city}</p>
     </div>
     <div>
           
