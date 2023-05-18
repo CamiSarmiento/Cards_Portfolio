@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
-  margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -10,8 +8,9 @@
   color: #fff;
 }
 html,
-body {
+body {  
   display: grid;
+
   height: 100%;
   place-items: center;
   background: #4454ad;
@@ -19,10 +18,12 @@ body {
 
 #usuarios {
   max-width: 1100px;
-  display: flex;
-  justify-content: space-between;
+ display: flex;
+flex-wrap: wrap;
+  gap: 30px;
   align-items: center;
-  flex-wrap: wrap;
+  word-break: break-word;
+  margin: 20px ;
 }
 
 #usuarios .card .front {
@@ -33,14 +34,12 @@ body {
   align-items: center;
   padding: 10px 20px;
   margin-bottom: 20px;
-  border-radius: 5px;
-  width: 300px;
+  border-radius: 15px;
+  width: 250px;
+  height: 350px;
+
 }
 
-.card {
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
 .card i {
   margin-top: 10px;
   font-size: 45px;
@@ -48,8 +47,8 @@ body {
 }
 #usuarios .card .imagen {
   margin: 10px 0;
-  height: 150px;
-  width: 150px;
+  height: 90px;
+  width: 90px;
   background: #4454ad;
   padding: 3px;
   border-radius: 50%;
@@ -64,7 +63,7 @@ body {
 .card p {
   text-align: justify;
   margin-top: 8px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
 }
 .card .nombre {
@@ -99,12 +98,12 @@ a {
 #btn {
   background: #5165d6;
   width: 100%;
-  padding: 5px 0px;
+  padding: 5px 30px;
   outline: none;
   border: 2px solid #5165d6;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
   color: #dee0ee;
   transition: all 0.3s linear;
@@ -121,18 +120,6 @@ a {
   backface-visibility: hidden;
 }
 
-.back {
-
-  background: #fff;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  width: 300px;
- 
-}
 .btns a {
   
   background: #5165d6;
@@ -152,13 +139,13 @@ a {
   background: #020b3d;
 }
 @media (max-width: 1045px) {
-  .container .box {
+  .container {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
 }
 @media (max-width: 710px) {
-  .container .box {
+  .container {
     width: 100%;
   }
 }

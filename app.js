@@ -37,7 +37,7 @@ async function changeInformation(users) {
       <img src=${user.picture.large} alt="" /> 
     </div>
     <div class="nombre">
-    <p>Nombre completo: ${user.name.first}, ${user.name.last}</p>
+    <p>Nombre: ${user.name.first}, ${user.name.last}</p>
   </div>
     <div id="estrellas">
      ${estrellas}
