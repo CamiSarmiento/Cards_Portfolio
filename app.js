@@ -38,7 +38,7 @@ async function changeInformation(users) {
     </div>
     <div class="nombre">
     <p>Nombre: ${user.name.first}, ${user.name.last}</p>
-  </div>
+   </div>
     <div id="estrellas">
      ${estrellas}
     </div>
