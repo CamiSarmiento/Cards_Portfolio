@@ -23,7 +23,7 @@ function generarEstrellas() {
   return estrellas;
 }
 
-// Fetch user profiles from the API
+//trae los perfiles desde la API
 async function fetchProfiles() {
   try {
     const response = await fetch(API_URL);
@@ -36,7 +36,7 @@ async function fetchProfiles() {
   }
 }
 
-// Render profile thumbnails on the home screen
+// perfil para cards de usuarios
 function renderProfileThumbnails(profiles) {
   const gridContainer = document.getElementById("profile-grid");
   gridContainer.innerHTML = "";
@@ -53,14 +53,14 @@ function renderProfileThumbnails(profiles) {
               <img src="${profile.picture.large}" alt="" />
             </div>
             <div class="nombre">
-              <p>Nombre: ${profile.name.first}, ${profile.name.last}</p>
+              <p>${profile.name.first} ${profile.name.last}</p>
             </div>
             <div id="estrellas">
               ${estrellas}
             </div>
             <div>
-              <p>Pais: ${profile.nat}</p>
-              <p>Ciudad: ${profile.location.city}</p>
+              <p>Pais: ${profile.location.country}</p>
+              <p>Ciudad:${profile.location.city}</p>
             </div>
           </div>
         </div>` ;
@@ -70,7 +70,7 @@ function renderProfileThumbnails(profiles) {
   });
 }
 
-// Show the detail view of a profile
+// Detalles del usuario 
 function showProfileDetail(profile) {
   const detailContainer = document.getElementById("profile-detail");
   let estrellas = generarEstrellas();
@@ -82,7 +82,8 @@ function showProfileDetail(profile) {
             <div class="container">
                 <div class="showcase-row">
                     <div class="showcase-row-hi">
-                        <h1>Bienvenido a mi Portfolio </h1>
+                        <h2>Bienvenido a mi Portfolio </h2>
+                        <h1>Mi nombre es ${profile.name.first} ${profile.name.last}</h1>
                         <div class="container-anim">
                             <h2 class="tipear">Soy Desarrollador Web</h2>
                         </div>
@@ -234,13 +235,14 @@ function showProfileDetail(profile) {
     </div>
   `;
 
-  // Hide grid and show detail view
+  // oculta el perfil completo hasta que se haga clic
   const gridContainer = document.getElementById("profile-grid");
-  gridContainer.style.display = "flex";
-  detailContainer.style.display = "block";
+  gridContainer.style.display = "none";
+  detailContainer.style.display = "flex";
+  detailContainer.style.background = "white";
 }
 
-// Initialize the page
+// inicializa la pagina
 async function initializePage() {
   const profiles = await fetchProfiles();
   renderProfileThumbnails(profiles);
