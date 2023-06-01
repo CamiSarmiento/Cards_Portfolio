@@ -34,7 +34,7 @@ body {
   align-items: center;
   padding: 10px 20px;
   margin-bottom: 20px;
-  border: 5px solid #4454ad;
+  border: 5px groove #4454ad;
   border-radius: 15px;
   width: 200px;
   height: 300px;
@@ -111,7 +111,7 @@ a {
 
 .profile-detail {
   text-align:center ;
-  margin: 20px;
+  
 }
 
 .profile-detail .showcase-row-avatar img{
@@ -167,7 +167,7 @@ h6{
 }
 
 p{
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 a{
@@ -183,8 +183,9 @@ a{
 /* Container */
 
 .container{
-  margin: auto;
+  
   max-width: 1300px;
+  max-height: 1300px;
   overflow: auto;
   padding: 0 20px;
 }
@@ -503,18 +504,13 @@ textarea{
 
 #footer{
   background-color: black;
-  color: white;
+  height: 30px;
+  width: auto;
+  
 }
 
-#footer-row{
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 10px;
-}
 
-#footer-row a{
-  color: #4454ad;
-}
+
 
 /* query 1150 */
 
@@ -565,28 +561,22 @@ textarea{
   .row-hi-btn{
       justify-content: center;
   }
-  /* sobre-mi */
-  .sobre-mi-row{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-  }
-  .sobre-mi-row-exp{
-      margin-top: 50px;
-  }
-  .datos{
-      flex-basis: 40%;
-  }
- 
+
   /* resumen */
-  #resumen-column{
+    #resumen{
       flex-direction: column;
       margin-top: 10px;
   }
-  .columnasexp{
-      margin-top: 50px;
+ 
+  /* sobre-mi */
+  .sobre-mi-row{   
+      display: flex;
+      justify-content:flex-start ;
+      align-items: center;
+      text-align: center;
   }
+
+
   .contact-row{
       display: flex;
       flex-direction: column;
@@ -596,10 +586,7 @@ textarea{
   #touch{
       text-align: center;
   }
-  .contact-icons{
-      display: flex;
-      justify-content: center;
-  }
+ 
 
   #btn-holder{ text-align: center; }
   /* footer */
