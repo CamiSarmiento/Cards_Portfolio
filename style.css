@@ -80,13 +80,7 @@ body {
   margin-bottom: 5px;
 }
 
-a {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
+
 
 .card .profile-thumbnail {
   cursor: pointer;
@@ -115,7 +109,7 @@ a {
 }
 
 .profile-detail .showcase-row-avatar img{
-  border-radius: 50%;
+  border-radius: 100%;
   width: 200px;
   border: 8px solid #4454ad;
   box-shadow: -1px 0px 18px 15px rgba(0,0,0,0.12);
@@ -142,42 +136,15 @@ body .profile-detail{
   background: white;
 }
 
-h1{
-  font-size: 2rem;
-}
 
-h2{
-  font-size: 3rem; 
-}
-
-h3{
-  font-size: 1.6rem;
-}
-
-h4{
-  font-size: 1.4rem;
-}
-
-h5{
-  font-size: 1.2rem;
-}
-
-h6{
-  font-size: 1rem;
-}
-
-p{
-  font-size: 1rem;
-}
 
 a{
   color:black;
   text-decoration:none;
 }
 
-.center{
-  text-align: center;
-}
+
+
 
 
 /* Container */
@@ -197,15 +164,20 @@ a{
   
 }
 
+
 .showcase-row{
   display:flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
+.showcase-row-hi h3{
+  font-size: 3rem;
+  font-weight: 600 bold;
+}
 .showcase-row-hi h1{
   font-weight: 400;
   text-transform: uppercase;
@@ -215,7 +187,7 @@ a{
 
 
 .container-anim{  
-      margin-top: 20px;
+      margin-top: 10px;
       display: inline-block;
       width: 600px;
 }
@@ -226,7 +198,7 @@ a{
   white-space: nowrap;
   font-size: 3rem;
   width: 0;
-  animation: typing 1s forwards, tilt 1s infinite;
+  animation: typing 5s forwards infinite , tilt 2s;
   ;
 }
 
@@ -236,25 +208,11 @@ a{
 }
 
 @keyframes tilt {
-  0%{ border-right: .15em solid #7a88da;}
+  0%{ border-right: .12em solid #7a88da;}
 }
 
-.showcase-row-hi h4 {
-  font-size: 1em;
-  margin-top: 15px;
-  margin-bottom: 30px;
-}
 
-.row-hi-btn{
-  display: flex;
-  justify-content: flex-start;
-  text-align: center;
-  align-items: center;
-}
 
-.row-hi-btn a{
-  text-decoration: none;
-}
 
 #btn{
   background-color: black;
@@ -323,12 +281,14 @@ a{
 
 /* resumen */
 
-#resumen-column{
+#resumen{
   margin-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:space-around;
+  border-style: 2px groove black;
+  border-radius: 20%;
 }
 
 .My-education-column{
@@ -338,11 +298,7 @@ a{
 }
 
 
-.educacion{
-  border-top: 1px solid rgb(236, 236, 236);
-  margin-top: 30px;
-  padding: 20px;
-}
+
 
 .My-experience-column{   
   border-left: 2px solid #020b3d;
@@ -354,15 +310,6 @@ a{
   border-top: 1px solid rgb(236, 236, 236);
   margin-top: 30px;
   padding: 20px;
-}
-
-.educacion h5{
-  font-size: 1rem;
-}
-
-.educacion h6{
-  font-size: 0.8rem;
-  margin-top: 10px;
 }
 
 .experiencia p{
@@ -378,9 +325,6 @@ a{
   margin-top: 10px;
 }
 
-.educacion p{
-  margin-top: 10px;
-}
 
 /* skills */
 
@@ -446,20 +390,7 @@ a{
   margin-bottom: 10px;
 }
 
-.contact-icons{
-  position: relative;
-  right: 10px;
-}
 
-.contact-icons ul li{
-  float: left;
-  list-style: none;
-}
-
-.contact-icons ul li a{
-  margin: 0 10px;
-  font-size: 1rem
-}
 
 #form{
  flex-basis: 60%;
@@ -467,14 +398,14 @@ a{
 }
 
 #form h3{
-  margin-bottom: 20px;
-  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 #form h5{
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: rgb(61, 60, 60);
-  margin-top: 10px;
+  margin: 10px;
 }
 
 .textarea{
@@ -504,9 +435,8 @@ textarea{
 
 #footer{
   background-color: black;
-  height: 30px;
-  width: auto;
-  
+  height: 60px;
+  width: 100%;
 }
 
 
@@ -558,9 +488,7 @@ textarea{
   .showcase-row-hi{
       margin-top: 30px;
   }
-  .row-hi-btn{
-      justify-content: center;
-  }
+
 
   /* resumen */
     #resumen{

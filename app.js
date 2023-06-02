@@ -70,6 +70,7 @@ function renderProfileThumbnails(profiles) {
   });
 }
 
+
 // Detalles del usuario 
 function showProfileDetail(profile) {
   const detailContainer = document.getElementById("profile-detail");
@@ -82,7 +83,7 @@ function showProfileDetail(profile) {
             <div class="container">
                 <div class="showcase-row">
                     <div class="showcase-row-hi">
-                        <h2>Bienvenido a mi Portfolio </h2>
+                        <h3>Bienvenido a mi Portfolio </h3>
                         <h1>Mi nombre es ${profile.name.first} ${profile.name.last}</h1>
                         <div class="container-anim">
                             <h2 class="tipear">Soy Desarrollador Web</h2>
@@ -101,7 +102,7 @@ function showProfileDetail(profile) {
       
       <section>
         <div class="container">
-           <div id="sobre-mi">
+           <div id="sobre-mi datos">
                <h2>${profile.name.first} ${profile.name.last}</h2>
                <div id="estrellas">${estrellas}</div>
             </div>
@@ -186,11 +187,11 @@ function showProfileDetail(profile) {
                 <div id="form">
                     <h3>Me quieres en tu proyecto?</h3>
                     <form action="">
-                        <label for="username"><h5>Cual es tu nombre?</h5></label>
+                        <label for="username"><h5>¿Cual es tu nombre?</h5></label>
                         <input class="textarea" type="text" id="username" name="usename">
-                        <label for="email"><h5>tu Email</h5></label>
+                        <label for="email"><h5>Tu Email</h5></label>
                         <input class="textarea" type="email" id="email" name="email">
-                        <label for="comment"><h5>Como puedo ayudarte</h5></label>
+                        <label for="comment"><h5>¿Como puedo ayudarte?</h5></label>
                         <textarea class="textarea" id="comment" name="comment" row="5" cols="50"></textarea>
                         <div id="btn-holder">
                             <input type="submit" id="submit" name="submit" value="Enviar">
@@ -202,13 +203,16 @@ function showProfileDetail(profile) {
       </section>
       
       <section id="footer">
-        
-            
+      <form action=""> 
+      <div id="btn-holder">
+      <input type="submit" id="submit" name="submit" value="Volver al inicio"></div>
+      </form>      
         
       </section>
 
     </div>
   `;
+
 
   // oculta el perfil completo hasta que se haga clic
   const gridContainer = document.getElementById("profile-grid");
@@ -224,3 +228,4 @@ async function initializePage() {
 }
 
 initializePage();
+
