@@ -78,12 +78,13 @@ function showProfileDetail(profile) {
   detailContainer.innerHTML = `
     <div class="profile-detail">
 
-    <header id="mainheader"> 
+      <header id="mainheader"> 
         <div id="showcase">
             <div class="container">
                 <div class="showcase-row">
                     <div class="showcase-row-hi">
                         <h3>Bienvenido a mi Portfolio </h3>
+                        
                         <h1>Mi nombre es ${profile.name.first} ${profile.name.last}</h1>
                         <div class="container-anim">
                             <h2 class="tipear">Soy Desarrollador Web</h2>
@@ -102,23 +103,26 @@ function showProfileDetail(profile) {
       
       <section>
         <div class="container">
-           <div id="sobre-mi datos">
-               <h2>${profile.name.first} ${profile.name.last}</h2>
-               <div id="estrellas">${estrellas}</div>
+           <div>
+               <h2> Datos Basicos </h2>
+               
             </div>
           </div>
       </section>
 
       <section>
-        <div class="container">
-            <div id="resumen">
+        <div id="resumen" class="container">
+            <div  class="column1">
                 <p>Usuario: ${profile.login.username}</p>
                 <p>Email: ${profile.email}</p>
-                <p>Pais: ${profile.location.country}</p>
+                <p>Pais: ${profile.location.country}</p> 
+            </div>
+            <div id="column2">
                 <p>Provincia: ${profile.location.state}</p>
                 <p>Ciudad: ${profile.location.city}</p>
                 <p>Codigo Postal: ${profile.location.postcode}</p>
             </div>
+            
 
         </div>
       </section>
@@ -129,7 +133,8 @@ function showProfileDetail(profile) {
             
             <div id="skills">
                 <div class="container">
-                <h4>Mis Habilidades</h4>
+                <h2>Mis Habilidades</h2>
+                <div id="estrellas">${estrellas}</div>
                 <div class="skillbars">
                     <div id="web-design">
                         <p>Diseño Web 65%</p>
@@ -180,7 +185,9 @@ function showProfileDetail(profile) {
             <div class="contact-row centerheader">
                 <div id="touch">
                     <h3>Mantegamos el Contacto</h3>
-                    <p>Estoy dispuesto a nuevos proyectos y desafios, por favor comparta tanta información como sea posible para que podamos aprovechar al máximo nuestra primera impresion.</p>
+                    <p>Estoy dispuesto a nuevos proyectos y desafios, </p> 
+                    <p>por favor comparta tanta información como sea posible </p> 
+                    <p>para que podamos aprovechar al máximo nuestra primera impresion.</p>
                    
                 </div>
       
