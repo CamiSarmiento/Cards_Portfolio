@@ -133,8 +133,8 @@ body .profile-detail{
 
 .container{
   
-  max-width: 1300px;
-  max-height: 1150px;
+  width: 100%;
+ height: 100%;
   overflow: auto;
  
 }
@@ -154,7 +154,7 @@ body .profile-detail{
   flex-direction:column-reverse;
   margin-top: 20px;
   margin-bottom: 20px;
- 
+
   border-bottom: 1rem solid black;
 }
 
@@ -236,6 +236,7 @@ body .profile-detail{
 }
 
 
+
 .column1{
   
   flex-basis: 50%;
@@ -244,7 +245,9 @@ body .profile-detail{
   padding: 30px;
   
 }
- 
+.column1 p{
+  font-size: 1rem;
+}
 
 
 
@@ -257,6 +260,7 @@ body .profile-detail{
 
 p{
   font-weight: bold;
+
 }
 
 
@@ -268,7 +272,7 @@ p{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-bottom: 60px;
 }
 
@@ -392,6 +396,8 @@ textarea{
       background-color:#b9b2b2;
       border-radius: 30px;
 }
+
+
 }
 
 
@@ -403,33 +409,122 @@ textarea{
   }
 
   .showcase-row-hi h1{
-      font-size: 1.8rem;
+      font-size: 1.6rem;
   }
-  .datos h5{
-      margin-top: 1px;
+
+  .showcase-row-hi h2{
+    font-size: 2rem;
+}
+
+.showcase-row-hi h3{
+  font-size: 2.5rem;
+}
+  #resumen{
+      margin-top: 2px;
       font-size: 1rem;
   }
 
-
-
-
+#touch{
+  flex-basis: 60%;
 }
 
+#form{
+  flex-basis: 40%;
+}
 
-@media (max-width: 1045px) {
+h3{
+  font-size: 1.5rem;
+}
+h4{
+  font-size: 2rem;
+}
+}
+
+@media (max-width: 992px) {
   .container {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   .showcase-row-hi{
-    font-size: 20rem ;
+    font-size: 2rem ;
 
   }
-}
+  .contact-row{
+      
+      padding-top: 50px;
+      margin-bottom: 50px;
+    }
+    
+    #touch{
+      padding: 0 90px;
+    
+    }
+    
+    #touch h3{
+      
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    
+    #touch p{
+      font-weight: 500;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    
+    
+    
+    #form{
+     flex-basis: 50%;
+     padding: 0  5px;
+    }
+    
+    #form h3{
+      margin-bottom: 5px;
+      font-size: 1rem;
+    }
+    
+    #form h5{
+      font-size: 0.8rem;
+      color: rgb(61, 60, 60);
+      margin: 5px;
+    }
+    
+    .textarea{
+      background-color:white;
+      border: none;
+      border-bottom: 1px solid rgb(61, 60, 60);
+      margin-top: 10px;
+      width: 100%;
+    }
+    
+    textarea{
+      background-color: rgb(248, 248, 247);
+      border: none;
+      border-bottom: 1px solid rgb(61, 60, 60);
+      height: 100px;
+    }
+    
+    #submit{
+      margin-top: 10px;
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+    }
+    
+    h3{
+      font-size: 1.5rem;
+    }
+    h4{
+      font-size: 2rem;
+    }
+  }
 
-/* query  970*/
 
-@media only screen and (max-width: 970px){
+
+
+@media (max-width: 768px) and (max-width: 991px){
   .container-bar{
       width: 325px;
       display:flex;
@@ -439,18 +534,11 @@ textarea{
       
 }
 .container {
-  width: 90%;
-  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-}
-/* query  800*/
-
-@media only screen and (max-width: 880px){
-
-  /* skillbars */
-
-  .container-bar{
+.container-bar{
     display:flex;
       width: 280px;
       height: 10px; 
@@ -460,73 +548,123 @@ textarea{
 
     
   /* showcase */
-  .showcase-row{
+.showcase-row{
       
       text-align: center;
   }
-  .showcase-row-hi{
-      margin-top: 30px;
+.showcase-row-hi{
+      margin-top: 20px;
   }
 
 
   /* resumen */
-    #resumen{
+#resumen{
       flex-direction: column;
-      margin-top: 10px;
+     
+
+  
   }
  
-  /* sobre-mi */
-  .sobre-mi-row{   
-      display: flex;
-      justify-content:flex-start ;
-      align-items: center;
-      text-align: center;
+  #column2{
+   border-right:5px solid black ;
   }
 
+  /* sobre-mi */
 
-  .contact-row{
+.skillbars{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 6px;
+
+}
+.contact-row{
       display: flex;
       flex-direction: column;
       align-items: center;
+     
   }
   /* contacto */
-  #touch{
+#touch{
+  
       text-align: center;
+      padding-bottom: 50px;
+      
   }
  
 
-  #btn-holder{ text-align: center; }
+#btn-holder{ text-align: center; }
  
-  #form h3{
+#form h3{
       text-align: center;
   }
 
+  h4{
+    font-size: 2rem;
+  }
   
 }
 
-@media (max-width: 710px) {
+
+
+ 
+
+
+
+
+
+
+@media only screen and (max-width: 576px) and (max-width: 710px) {
+
   .container {
    
-    width: 90%;
+    width: 100%;
   }
-}
-
-
-
-
-
-
-@media only screen and (max-width: 483px){
-
   .showcase-row{
       text-align: center;
+      justify-content: center;
+     
   }
 
   .showcase-row-hi h1{
-      font-size: 1.8rem;
+      font-size: 1.5rem;
+  }
+  .showcase-row-hi h3{
+    font-size: 2rem;
+}
+
+  h4{
+    font-size: 1.6rem;
   }
 
+  .container-anim{  
+    margin-top: 10px;
+    display: inline-block;
+    width: 600px;
+    padding-left: 100px;
+    
+}
 
+.tipear{
+overflow: hidden;
+border-right: .12em solid black;
+white-space: nowrap;
+font-size: 3rem;
+width: 0;
+animation: typing 5s forwards infinite , tilt 1s;
+
+
+}
+
+@keyframes typing {
+from { width: 0% }
+to { width: 76% }
+}
+
+@keyframes tilt {
+0%{ border-right: .12em solid #7a88da;}
+}
 
 
 }
@@ -534,34 +672,78 @@ textarea{
 
 @media only screen and (max-width: 415px){
 
-  .container{
-      padding: 0px;
-  }
-
-  /* showcase */
-  .showcase-row-avatar img{
-      width: 90%
+  .container {
+   
+    width: 67%;
   }
   .container-anim{
-      width: 200px;
+    padding-left: 6px;
   }
-  .tipear{
-      font-size: 1rem;
+  .showcase-row{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      
+     
   }
-  /* sobre mi */
-  .sobre-mi-row{
-      justify-content: flex-start;
+  .showcase-row-hi h2{
+    font-size: 1.5rem;
+}
+  .showcase-row-hi h1{
+      font-size: 1.3rem;
   }
-
-  
-  /* resumen */
-  #resumen{
-      padding: 0 20px;
-  }
-  /* habilidades */
-  #skills{
-      padding: 0 20px;
-      margin-top: 50px;
-  }
+  .showcase-row-hi h3{
+    font-size: 1.5rem;
+}
+.contact-row{
+  padding-top: 20px;
 }
 
+  h4{
+    font-size: 1.3rem;
+  }
+
+  .container-anim{  
+    margin-top: 10px;
+    display: inline-block;
+    width: 600px;
+    padding-left: 50px;
+    
+}
+
+.tipear{
+overflow: hidden;
+border-right: .12em solid black;
+white-space: nowrap;
+font-size: 2rem;
+width: 0;
+animation: typing 5s forwards infinite , tilt 1s;
+
+
+}
+
+@keyframes typing {
+from { width: 0% }
+to { width: 76% }
+}
+
+@keyframes tilt {
+0%{ border-right: .12em solid #7a88da;}
+}
+
+#touch{
+  
+  text-align: center;
+  padding-bottom: 50px;
+  
+}
+.skillbars{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 6px;
+
+}
+
+}

@@ -104,7 +104,7 @@ function showProfileDetail(profile) {
       <section>
         <div class="container">
            <div>
-               <h2> Datos Basicos </h2>
+               <h4> Datos Basicos </h4>
                
             </div>
           </div>
@@ -182,7 +182,7 @@ function showProfileDetail(profile) {
       
       <section id="contacto">
         <div class="container">
-            <div class="contact-row centerheader">
+            <div class="contact-row ">
                 <div id="touch">
                     <h3>Mantegamos el Contacto</h3>
                     <p>Estoy dispuesto a nuevos proyectos y desafios, </p> 
