@@ -186,7 +186,7 @@ function showProfileDetail(profile) {
                 <div id="touch">
                     <h3>Mantegamos el Contacto</h3>
                     <p>Estoy dispuesto a nuevos proyectos y desafios, </p> 
-                    <p>por favor comparta tanta información como sea posible </p> 
+                    <p>Por favor comparta tanta información como sea posible </p> 
                     <p>para que podamos aprovechar al máximo nuestra primera impresion.</p>
                    
                 </div>

@@ -666,6 +666,38 @@ to { width: 76% }
 0%{ border-right: .12em solid #7a88da;}
 }
 
+.column1 {
+  border-left: none;
+  padding:2px;
+}
+
+#column2{
+  border-left: none;
+  padding:2px;
+}
+.contact-row{
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+#touch {
+  padding: 0px 20px;
+
+
+  
+}
+
+#touch h3{
+  padding-bottom: 20px;
+}
+
+.textarea{
+  width: 80%;
+}
+#form h3{
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
 
 }
 
@@ -673,77 +705,62 @@ to { width: 76% }
 @media only screen and (max-width: 415px){
 
   .container {
-   
-    width: 67%;
+    text-align: center;
+
+    box-sizing: content-box;
+    width: 100%;
   }
-  .container-anim{
-    padding-left: 6px;
-  }
+ .showcase-row-avatar{
+      width: 40%;
+ }
+
   .showcase-row{
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+   
      
   }
-  .showcase-row-hi h2{
-    font-size: 1.5rem;
-}
+
   .showcase-row-hi h1{
-      font-size: 1.3rem;
+      font-size: 1.5rem;
   }
   .showcase-row-hi h3{
-    font-size: 1.5rem;
-}
-.contact-row{
-  padding-top: 20px;
-}
+    display:none;
+  }
 
   h4{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
   .container-anim{  
-    margin-top: 10px;
-    display: inline-block;
-    width: 600px;
-    padding-left: 50px;
+   
+    display: none;
+    
     
 }
 
-.tipear{
-overflow: hidden;
-border-right: .12em solid black;
-white-space: nowrap;
-font-size: 2rem;
-width: 0;
-animation: typing 5s forwards infinite , tilt 1s;
 
-
+.contact-row{
+  padding-top: 20px;
+  margin-bottom: 50px;
 }
 
-@keyframes typing {
-from { width: 0% }
-to { width: 76% }
-}
-
-@keyframes tilt {
-0%{ border-right: .12em solid #7a88da;}
-}
-
-#touch{
-  
-  text-align: center;
-  padding-bottom: 50px;
+#touch {
+  padding: 0px 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ 
   
 }
-.skillbars{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-bottom: 6px;
 
+
+.textarea{
+  width: 90%;
 }
-
+#form h3{
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
 }
