@@ -702,7 +702,7 @@ to { width: 76% }
 }
 
 
-@media only screen and (max-width: 415px){
+@media only screen and (max-width: 384px) and (max-width: 415px){
 
   .container {
     text-align: center;
