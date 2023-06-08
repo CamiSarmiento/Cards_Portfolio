@@ -440,7 +440,7 @@ h4{
 }
 }
 
-@media (max-width: 992px) {
+@media  only screen and (max-width: 992px) {
   .container {
     width: 100%;
     margin-bottom: 5px;
@@ -524,15 +524,14 @@ h4{
 
 
 
-@media (max-width: 768px) and (max-width: 991px){
+@media only screen and (max-width: 768px) and (max-width: 991px){
   .container-bar{
       width: 325px;
       display:flex;
       height: 10px; 
       background-color: #b9b2b2;
       border-radius: 30px;
-      
-}
+      }
 .container {
   width: 100%;
   margin-bottom: 10px;
@@ -632,7 +631,7 @@ h4{
   }
   .showcase-row-hi h3{
     font-size: 2rem;
-}
+  }
 
   h4{
     font-size: 1.6rem;
@@ -642,9 +641,9 @@ h4{
     margin-top: 10px;
     display: inline-block;
     width: 600px;
-    padding-left: 100px;
+    padding-left: 100px;}
     
-}
+
 
 .tipear{
 overflow: hidden;
@@ -653,8 +652,6 @@ white-space: nowrap;
 font-size: 3rem;
 width: 0;
 animation: typing 5s forwards infinite , tilt 1s;
-
-
 }
 
 @keyframes typing {
